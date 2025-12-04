@@ -17,13 +17,20 @@ const appConfig = {
     },
   },
   rules: {
-    'no-console': ['warn'],
-    'no-debugger': ['warn'],
+    'no-console': ['error'],
+    'no-debugger': ['error'],
     '@typescript-eslint/no-explicit-any': ['error'],
     '@typescript-eslint/no-unused-vars': ['error'],
     '@typescript-eslint/no-deprecated': ['error'],
+    '@typescript-eslint/no-floating-promises': ['error'],
+    '@typescript-eslint/no-misused-promises': ['error'],
+    '@typescript-eslint/await-thenable': ['error'],
+    '@typescript-eslint/no-unnecessary-condition': ['error'],
+    '@typescript-eslint/require-await': ['error'],
     'prefer-const': ['error'],
-    'no-useless-escape': ['warn'],
+    'no-useless-escape': ['error'],
+    'no-var': ['error'],
+    eqeqeq: ['error', 'always'],
   },
 };
 

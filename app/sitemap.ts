@@ -6,9 +6,10 @@ interface SitemapEntry {
 }
 
 export default function sitemap(): SitemapEntry[] {
+  const today = new Date().toISOString().split('T')[0] ?? '2025-01-01';
   const routes = [''].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date().toISOString().split('T')[0],
+    lastModified: today,
   }));
 
   return routes;
