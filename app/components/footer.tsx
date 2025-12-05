@@ -11,7 +11,7 @@ export default function Footer() {
         >
           @alexstolyarov
         </a>{' '}
-        (Bizdev, presale, pubrel, partymaker)
+        (bizdev, presale, pubrel, partymaker)
       </p>
     </footer>
   );
